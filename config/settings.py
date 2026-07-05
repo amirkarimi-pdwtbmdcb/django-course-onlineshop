@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # third party
+    'rosetta',
     'crispy_forms',
     'crispy_bootstrap5',
     'allauth',
@@ -135,6 +136,11 @@ EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 # https://docs.djangoproject.com/en/6.0/topics/i18n/
 
 LANGUAGE_CODE = 'fa'
+
+LANGUAGES = (
+    ('en', 'English'),
+    ('fa', 'Persian'),
+)
 
 TIME_ZONE = 'Asia/Tehran'
 
