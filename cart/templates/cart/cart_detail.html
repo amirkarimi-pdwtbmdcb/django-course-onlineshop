@@ -3,6 +3,8 @@
 {% load static %}
 {% load i18n %}
 {% load crispy_forms_tags %}
+{% load translate_persian_tags %}
+{% load humanize %}
 
 {% block page_title %}
   CartPage
@@ -45,7 +47,7 @@
                               <h3><a href="{{ item.product_obj.get_absolute_url }}">{{ item.product_obj.title }}</a></h3>
                             </td>
                             <td class="product-price">
-                              <span class="product-price-wrapper"><span class="money">{{ item.product_obj.price }} تومان</span></span>
+                              <span class="product-price-wrapper"><span class="money">{{ item.product_obj.price|intcomma:False|translate_number }} {% trans "$" %}</span></span>
                             </td>
                             <td class="product-quantity">
                               <form class="d-flex" action="{% url 'cart:cart_add' item.product_obj.id %}" method="post">
@@ -58,7 +60,7 @@
                               </form>
                             </td>
                             <td class="product-total-price">
-                              <span class="product-price-wrapper"><span class="money">{{ item.total_price }} تومان</span></span>
+                              <span class="product-price-wrapper"><span class="money">{{ item.total_price|intcomma:False|translate_number }} {% trans "$" %}</span></span>
                             </td>
                           </tr>
                         {% endfor %}
@@ -88,7 +90,7 @@
                       <span>{% translate "Total sum" %}</span>
                     </div>
                     <div class="cart-calculator__item--value">
-                      <span class="product-price-wrapper"><span class="money">{{ cart.get_total_price }} {% trans '$' %}</span></span>
+                      <span class="product-price-wrapper"><span class="money">{{ cart.get_total_price|intcomma:False|translate_number }} {% trans '$' %}</span></span>
                     </div>
                   </div>
                 </div>

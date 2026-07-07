@@ -43,8 +43,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.humanize',
 
     # third party
+    'jalali_date',
     'rosetta',
     'crispy_forms',
     'crispy_bootstrap5',
@@ -56,6 +58,7 @@ INSTALLED_APPS = [
     'pages',
     'products',
     'cart',
+    'persian_translate',
 ]
 
 SITE_ID = 1

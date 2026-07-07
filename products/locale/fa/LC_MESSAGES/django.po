@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-06 14:32-0600\n"
+"POT-Creation-Date: 2026-07-06 16:54-0600\n"
 "PO-Revision-Date: 2026-07-06 05:25+0330\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,136 +19,133 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Translated-Using: django-rosetta 0.10.3\n"
 
-#: .\models.py:25
+#: .\models.py:12
+msgid "Product Image"
+msgstr "عکس محصول"
+
+#: .\models.py:26
 msgid "Very Bad"
 msgstr "خیلی بد"
 
-#: .\models.py:26
+#: .\models.py:27
 msgid "Bad"
 msgstr "بد"
 
-#: .\models.py:27
+#: .\models.py:28
 msgid "Normal"
 msgstr "معمولی"
 
-#: .\models.py:28
+#: .\models.py:29
 msgid "Good"
 msgstr "خوب"
 
-#: .\models.py:29
+#: .\models.py:30
 msgid "Perfect"
 msgstr "عالی"
 
-#: .\models.py:36
+#: .\models.py:37
 msgid "Comment author"
 msgstr "نویسنده ی دیدگاه"
 
-#: .\models.py:38
+#: .\models.py:39
 msgid "Comment Text"
 msgstr "متن دیدگاه"
 
-#: .\models.py:42
+#: .\models.py:43
 msgid "What is your score?"
 msgstr "امتیاز شما به این محصول چیست؟"
 
-#: .\templates\products\product_detail.html:18
+#: .\templates\products\product_detail.html:19
 msgid "Detail Of Product"
 msgstr "جزئیات محصول"
 
-#: .\templates\products\product_detail.html:61
-#: .\templates\products\product_list.html:61
+#: .\templates\products\product_detail.html:62
+#: .\templates\products\product_list.html:63
 msgid "Add To Cart"
 msgstr "اضافه به سبد خرید"
 
-#: .\templates\products\product_detail.html:67
+#: .\templates\products\product_detail.html:68
 msgid "Categories"
 msgstr "دسته بندی ها"
 
-#: .\templates\products\product_detail.html:82
+#: .\templates\products\product_detail.html:83
 msgid "Product Description"
 msgstr "توضیحات محصول"
 
-#: .\templates\products\product_detail.html:85
+#: .\templates\products\product_detail.html:86
 msgid "Features"
 msgstr "ویژگی ها"
 
-#: .\templates\products\product_detail.html:88
+#: .\templates\products\product_detail.html:89
 msgid "Comments"
 msgstr "نظرات"
 
-#: .\templates\products\product_detail.html:102
+#: .\templates\products\product_detail.html:103
 msgid "Weight"
 msgstr "وزن"
 
-#: .\templates\products\product_detail.html:106
+#: .\templates\products\product_detail.html:107
 msgid "Size"
 msgstr "سایز"
 
-#: .\templates\products\product_detail.html:110
+#: .\templates\products\product_detail.html:111
 msgid "Color"
 msgstr "رنگ"
 
-#: .\templates\products\product_detail.html:124
-#, fuzzy
-#| msgid "Comment author"
+#: .\templates\products\product_detail.html:125
 msgid "Comment for"
-msgstr "نویسنده ی دیدگاه"
+msgstr "نظر برای"
 
-#: .\templates\products\product_detail.html:163
+#: .\templates\products\product_detail.html:164
 msgid "Enter your comment"
 msgstr "نظر خود را وارد کنید"
 
-#: .\templates\products\product_detail.html:168
+#: .\templates\products\product_detail.html:169
 msgid "Submit"
 msgstr "ارسال"
 
-#: .\templates\products\product_detail.html:172
+#: .\templates\products\product_detail.html:173
 msgid "To write your comment please"
 msgstr "برای نوشتن کامنت خود لطفا"
 
-#: .\templates\products\product_detail.html:173
+#: .\templates\products\product_detail.html:174
 msgid "Log In"
 msgstr "وارد شوید"
 
-#: .\templates\products\product_detail.html:237
-msgid "Cart"
-msgstr "سبد  خرید"
-
-#: .\templates\products\product_detail.html:257
-#: .\templates\products\product_detail.html:266
-#: .\templates\products\product_list.html:55
-#: .\templates\products\product_list.html:58
-msgid "$"
-msgstr "تومان"
-
-#: .\templates\products\product_detail.html:265
-msgid "Total sum"
-msgstr "جمع کل"
-
-#: .\templates\products\product_detail.html:269
-msgid "Go to cart"
-msgstr "مشاهده سبد خرید"
-
-#: .\templates\products\product_detail.html:270
-msgid "Payment"
-msgstr "پرداخت"
-
-#: .\templates\products\product_list.html:48
+#: .\templates\products\product_list.html:50
 msgid "Special Discount"
 msgstr "تخفیف ویژه"
 
-#: .\templates\products\product_list.html:99
+#: .\templates\products\product_list.html:57
+#: .\templates\products\product_list.html:60
+msgid "$"
+msgstr "تومان"
+
+#: .\templates\products\product_list.html:101
 msgid "About Us"
 msgstr "درباره ما"
 
-#: .\templates\products\product_list.html:100
+#: .\templates\products\product_list.html:102
 msgid "Rules And Regulations"
 msgstr "قوانین و مقررات"
 
-#: .\templates\products\product_list.html:101
+#: .\templates\products\product_list.html:103
 msgid "Contact Us"
 msgstr "تماس با ما"
 
+
 #: .\views.py:40
-msgid " Your comment successfuly created"
+msgid "Your comment successfuly created"
 msgstr "نظر شما با موفقیت ثبت شد"
+
+#~ msgid "Cart"
+#~ msgstr "سبد  خرید"
+
+#~ msgid "Total sum"
+#~ msgstr "جمع کل"
+
+#~ msgid "Go to cart"
+#~ msgstr "مشاهده سبد خرید"
+
+#~ msgid "Payment"
+#~ msgstr "پرداخت"
