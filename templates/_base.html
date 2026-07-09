@@ -42,7 +42,7 @@
                 <div class="site-branding" style="margin-right: 30px;">
                   <a href="{% url 'product_list' %}" class="logo">
                     <figure class="logo--normal d-none d-sm-block">
-                      <img class="px-5" src="assets/img/codingyar_logo.png" style="max-height: 50px; margin-bottom: -15px;" alt="Logo" />
+                      <img class="px-5" src="{% static 'img/codingyar_logo.png' %}" style="max-height: 50px; margin-bottom: -15px;" alt="Logo" />
                     </figure>
                   </a>
                 </div>
@@ -86,7 +86,7 @@
                         <a class="text-right" href="{% url 'cart:cart_detail' %}">{% trans 'Cart' %}</a>
                       </li>
                       <li>
-                        <a class="text-right" href="wishlist.html">علاقه مندی ها</a>
+                        <a class="text-right" href="wishlist.html">{% trans 'Favorites' %}</a>
                       </li>
                       <li>
                         <a class="text-right" href="{% url 'account_logout' %}">{% trans 'Logout' %}</a>
@@ -139,7 +139,11 @@
 
     {% endblock %}
 
+
     {% include 'cart/cart_sidebar.html' %}
+
+    {% include 'footer.html' %}
+    
 
     <!-- jQuery JS -->
     <script src="{% static 'js/vendor.js' %}"></script>

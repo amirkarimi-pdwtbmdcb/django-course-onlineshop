@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-06 14:21-0600\n"
+"POT-Creation-Date: 2026-07-09 01:08-0600\n"
 "PO-Revision-Date: 2026-07-05 22:21+0330\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,46 +27,64 @@ msgstr "محصول با موفقیت به سبد خرید اضافه شد"
 msgid "Product successfuly removed to cart"
 msgstr "محصول با موفقیت از سبد خرید حذف شد"
 
-#: .\templates\cart\cart_detail.html:28
+#: .\templates\cart\cart_detail.html:30
 msgid "Product Image"
 msgstr "عکس محصول"
 
-#: .\templates\cart\cart_detail.html:29
+#: .\templates\cart\cart_detail.html:31
 msgid "Product Name"
 msgstr "اسم محصول"
 
-#: .\templates\cart\cart_detail.html:30
+#: .\templates\cart\cart_detail.html:32
 msgid "Price"
 msgstr "قیمت"
 
-#: .\templates\cart\cart_detail.html:31
+#: .\templates\cart\cart_detail.html:33
 msgid "Quantity"
 msgstr "مقدار"
 
-#: .\templates\cart\cart_detail.html:32 .\templates\cart\cart_detail.html:84
+#: .\templates\cart\cart_detail.html:34 .\templates\cart\cart_detail.html:89
 msgid "Total"
 msgstr "مجموع"
 
-#: .\templates\cart\cart_detail.html:69
-msgid "Cart is Empty! Please add some products to the cart"
-msgstr "سبد خرید خالی است! لطفا محصولی را به سبد خرید اضافه کنید"
-
-#: .\templates\cart\cart_detail.html:70
-msgid "Go Shopping"
-msgstr "به خرید بروید"
-
-#: .\templates\cart\cart_detail.html:77
-msgid "Empty Cart"
-msgstr "خالی کردن سبد خرید"
-
-#: .\templates\cart\cart_detail.html:88
-msgid "Total sum"
-msgstr "جمع کل"
-
-#: .\templates\cart\cart_detail.html:91
+#: .\templates\cart\cart_detail.html:50 .\templates\cart\cart_detail.html:63
+#: .\templates\cart\cart_detail.html:96 .\templates\cart\cart_sidebar.html:23
+#: .\templates\cart\cart_sidebar.html:30
 msgid "$"
 msgstr "تومان"
 
-#: .\templates\cart\cart_detail.html:96
+#: .\templates\cart\cart_detail.html:71
+msgid "Cart is Empty! Please add some products to the cart"
+msgstr "سبد خرید خالی است! لطفا محصولی را به سبد خرید اضافه کنید"
+
+#: .\templates\cart\cart_detail.html:72
+msgid "Go Shopping"
+msgstr "به خرید بروید"
+
+#: .\templates\cart\cart_detail.html:81
+msgid "Empty Cart"
+msgstr "خالی کردن سبد خرید"
+
+#: .\templates\cart\cart_detail.html:93 .\templates\cart\cart_sidebar.html:29
+msgid "Total sum"
+msgstr "جمع کل"
+
+#: .\templates\cart\cart_detail.html:101
 msgid "Place an order"
 msgstr "ثبت سفارش"
+
+#: .\templates\cart\cart_sidebar.html:10
+msgid "Cart"
+msgstr "سبد خرید"
+
+#: .\templates\cart\cart_sidebar.html:33
+msgid "Go to cart"
+msgstr "مشاهده سبد خرید"
+
+#: .\templates\cart\cart_sidebar.html:34
+msgid "Payment"
+msgstr "پرداخت"
+
+#: .\views.py:51
+msgid "All products successfuly removed from your cart"
+msgstr "همه ی محصولات با موفقیت از سبد خرید حذف شدند"

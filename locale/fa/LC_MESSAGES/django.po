@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-06 05:20-0600\n"
+"POT-Creation-Date: 2026-07-09 00:56-0600\n"
 "PO-Revision-Date: 2026-07-06 05:36+0330\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,6 +43,10 @@ msgstr "حساب کاربری"
 msgid "Cart"
 msgstr "سبد خرید"
 
+#: .\templates\_base.html:90
+msgid "Favorites"
+msgstr "علاقه مندی ها"
+
 #: .\templates\_base.html:93
 msgid "Logout"
 msgstr "خروج"
@@ -54,3 +58,15 @@ msgstr "ورود"
 #: .\templates\_base.html:100
 msgid "Signup"
 msgstr "ثبت نام"
+
+#: .\templates\footer.html:17
+msgid "About Us"
+msgstr "درباره ما"
+
+#: .\templates\footer.html:18
+msgid "Rules And Regulations"
+msgstr "قوانین و مقررات"
+
+#: .\templates\footer.html:19
+msgid "Contact Us"
+msgstr "تماس با ما"

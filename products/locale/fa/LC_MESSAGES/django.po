@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-06 16:54-0600\n"
+"POT-Creation-Date: 2026-07-09 00:56-0600\n"
 "PO-Revision-Date: 2026-07-06 05:25+0330\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,124 +19,122 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Translated-Using: django-rosetta 0.10.3\n"
 
-#: .\models.py:12
+#: .\products\models.py:16
 msgid "Product Image"
 msgstr "عکس محصول"
 
-#: .\models.py:26
+#: .\products\models.py:30
 msgid "Very Bad"
 msgstr "خیلی بد"
 
-#: .\models.py:27
+#: .\products\models.py:31
 msgid "Bad"
 msgstr "بد"
 
-#: .\models.py:28
+#: .\products\models.py:32
 msgid "Normal"
 msgstr "معمولی"
 
-#: .\models.py:29
+#: .\products\models.py:33
 msgid "Good"
 msgstr "خوب"
 
-#: .\models.py:30
+#: .\products\models.py:34
 msgid "Perfect"
 msgstr "عالی"
 
-#: .\models.py:37
+#: .\products\models.py:41
 msgid "Comment author"
 msgstr "نویسنده ی دیدگاه"
 
-#: .\models.py:39
+#: .\products\models.py:43
 msgid "Comment Text"
 msgstr "متن دیدگاه"
 
-#: .\models.py:43
+#: .\products\models.py:47
 msgid "What is your score?"
 msgstr "امتیاز شما به این محصول چیست؟"
 
-#: .\templates\products\product_detail.html:19
+#: .\products\templates\products\product_detail.html:21
 msgid "Detail Of Product"
 msgstr "جزئیات محصول"
 
-#: .\templates\products\product_detail.html:62
-#: .\templates\products\product_list.html:63
+#: .\products\templates\products\product_detail.html:64
+#: .\products\templates\products\product_list.html:61
 msgid "Add To Cart"
 msgstr "اضافه به سبد خرید"
 
-#: .\templates\products\product_detail.html:68
+#: .\products\templates\products\product_detail.html:70
 msgid "Categories"
 msgstr "دسته بندی ها"
 
-#: .\templates\products\product_detail.html:83
+#: .\products\templates\products\product_detail.html:85
 msgid "Product Description"
 msgstr "توضیحات محصول"
 
-#: .\templates\products\product_detail.html:86
+#: .\products\templates\products\product_detail.html:88
 msgid "Features"
 msgstr "ویژگی ها"
 
-#: .\templates\products\product_detail.html:89
+#: .\products\templates\products\product_detail.html:91
 msgid "Comments"
 msgstr "نظرات"
 
-#: .\templates\products\product_detail.html:103
+#: .\products\templates\products\product_detail.html:105
 msgid "Weight"
 msgstr "وزن"
 
-#: .\templates\products\product_detail.html:107
+#: .\products\templates\products\product_detail.html:109
 msgid "Size"
 msgstr "سایز"
 
-#: .\templates\products\product_detail.html:111
+#: .\products\templates\products\product_detail.html:113
 msgid "Color"
 msgstr "رنگ"
 
-#: .\templates\products\product_detail.html:125
+#: .\products\templates\products\product_detail.html:127
 msgid "Comment for"
 msgstr "نظر برای"
 
-#: .\templates\products\product_detail.html:164
+#: .\products\templates\products\product_detail.html:166
 msgid "Enter your comment"
 msgstr "نظر خود را وارد کنید"
 
-#: .\templates\products\product_detail.html:169
+#: .\products\templates\products\product_detail.html:171
 msgid "Submit"
 msgstr "ارسال"
 
-#: .\templates\products\product_detail.html:173
+#: .\products\templates\products\product_detail.html:175
 msgid "To write your comment please"
 msgstr "برای نوشتن کامنت خود لطفا"
 
-#: .\templates\products\product_detail.html:174
+#: .\products\templates\products\product_detail.html:176
 msgid "Log In"
 msgstr "وارد شوید"
 
-#: .\templates\products\product_list.html:50
+#: .\products\templates\products\product_list.html:46
 msgid "Special Discount"
 msgstr "تخفیف ویژه"
 
-#: .\templates\products\product_list.html:57
-#: .\templates\products\product_list.html:60
+#: .\products\templates\products\product_list.html:51
+#: .\products\templates\products\product_list.html:53
 msgid "$"
 msgstr "تومان"
 
-#: .\templates\products\product_list.html:101
-msgid "About Us"
-msgstr "درباره ما"
-
-#: .\templates\products\product_list.html:102
-msgid "Rules And Regulations"
-msgstr "قوانین و مقررات"
-
-#: .\templates\products\product_list.html:103
-msgid "Contact Us"
-msgstr "تماس با ما"
-
-
-#: .\views.py:40
-msgid "Your comment successfuly created"
+#: .\products\views.py:40
+#, fuzzy
+#| msgid "Your comment successfuly created"
+msgid " Your comment successfuly created"
 msgstr "نظر شما با موفقیت ثبت شد"
+
+#~ msgid "About Us"
+#~ msgstr "درباره ما"
+
+#~ msgid "Rules And Regulations"
+#~ msgstr "قوانین و مقررات"
+
+#~ msgid "Contact Us"
+#~ msgstr "تماس با ما"
 
 #~ msgid "Cart"
 #~ msgstr "سبد  خرید"

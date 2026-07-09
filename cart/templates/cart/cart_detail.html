@@ -17,21 +17,29 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mb-md--50">
-              <div class="row no-gutters">
-                <div class="col-12">
-                  
-                  {% if cart %}
-                    
+            <div class="row no-gutters">
+              <div class="col-12">
+                {% if cart %}
                   <div class="table-content table-responsive">
                     <table class="table text-center">
                       <thead>
                         <tr>
                           <th>&nbsp;</th>
-                          <th>{% trans 'Product Image' %}</th>
-                          <th>{% trans 'Product Name' %}</th>
-                          <th>{% trans 'Price' %}</th>
-                          <th>{% trans 'Quantity' %}</th>
-                          <th>{% trans 'Total' %}</th>
+                          <th>
+                            {% trans 'Product Image' %}
+                          </th>
+                          <th>
+                            {% trans 'Product Name' %}
+                          </th>
+                          <th>
+                            {% trans 'Price' %}
+                          </th>
+                          <th>
+                            {% trans 'Quantity' %}
+                          </th>
+                          <th>
+                            {% trans 'Total' %}
+                          </th>
                         </tr>
                       </thead>
                       <tbody>
@@ -41,13 +49,13 @@
                               <a href="{% url 'cart:cart_remove' item.product_obj.id %}"><i class="flaticon flaticon-cross"></i></a>
                             </td>
                             <td class="product-thumbnail text-left">
-                              <a href="{{ item.product_obj.get_absolute_url }}"><img src="assets/img/products/prod-10-70x88.jpg" /></a>
+                              <a href="{{ item.product_obj.get_absolute_url }}"><img src="{{ item.product_obj.image.url }}" /></a>
                             </td>
                             <td class="product-name">
                               <h3><a href="{{ item.product_obj.get_absolute_url }}">{{ item.product_obj.title }}</a></h3>
                             </td>
                             <td class="product-price">
-                              <span class="product-price-wrapper"><span class="money">{{ item.product_obj.price|intcomma:False|translate_number }} {% trans "$" %}</span></span>
+                              <span class="product-price-wrapper"><span class="money">{{ item.product_obj.price|intcomma:False|translate_number }} {% trans '$' %}</span></span>
                             </td>
                             <td class="product-quantity">
                               <form class="d-flex" action="{% url 'cart:cart_add' item.product_obj.id %}" method="post">
@@ -60,34 +68,39 @@
                               </form>
                             </td>
                             <td class="product-total-price">
-                              <span class="product-price-wrapper"><span class="money">{{ item.total_price|intcomma:False|translate_number }} {% trans "$" %}</span></span>
+                              <span class="product-price-wrapper"><span class="money">{{ item.total_price|intcomma:False|translate_number }} {% trans '$' %}</span></span>
                             </td>
                           </tr>
                         {% endfor %}
                       </tbody>
                     </table>
                   </div>
-                  {% else %}
+                {% else %}
                   <h4>{% trans 'Cart is Empty! Please add some products to the cart' %}</h4>
                   <a href="{% url 'product_list' %}">{% trans 'Go Shopping' %}</a>
-                  {% endif %}
-                    
-                </div>
+                {% endif %}
               </div>
+            </div>
+
+            {% if not cart.is_empty %}
               <div class="row no-gutters border-top pt--20 mt--20">
                 <div class="col-sm-6 text-sm-right">
-                  <button type="submit" class="cart-form__btn">{% translate "Empty Cart" %}</button>
+                  <form action="{% url 'cart:cart_clear' %}" method="post">
+                    {% csrf_token %}
+                    <button type="submit" class="cart-form__btn">{% translate 'Empty Cart' %}</button>
+                  </form>
                 </div>
               </div>
+            {% endif %}
           </div>
           <div class="col-lg-4">
-            <div class="cart-collaterals">
+            k<div class="cart-collaterals">
               <div class="cart-totals">
-                <h5 class="font-size-14 font-bold mb--15">{% translate "Total" %}</h5>
+                <h5 class="font-size-14 font-bold mb--15">{% translate 'Total' %}</h5>
                 <div class="cart-calculator">
                   <div class="cart-calculator__item order-total">
                     <div class="cart-calculator__item--head">
-                      <span>{% translate "Total sum" %}</span>
+                      <span>{% translate 'Total sum' %}</span>
                     </div>
                     <div class="cart-calculator__item--value">
                       <span class="product-price-wrapper"><span class="money">{{ cart.get_total_price|intcomma:False|translate_number }} {% trans '$' %}</span></span>
@@ -95,7 +108,7 @@
                   </div>
                 </div>
               </div>
-              <a href="checkout.html" class="btn btn-fullwidth btn-bg-red btn-color-white btn-hover-2">{% trans 'Place an order' %}</a>
+              <a href="{% url 'order_create' %}" class="btn btn-fullwidth btn-bg-red btn-color-white btn-hover-2">{% trans 'Place an order' %}</a>
             </div>
           </div>
         </div>
